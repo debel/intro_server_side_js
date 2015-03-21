@@ -1,0 +1,16 @@
+{
+  "name": "aubg_js",
+  "version": "0.0.0",
+  "description": "An introduction to several mostly related server side javascript aspects tooling (npm, bower, gulp) and networking (express and socket.io)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mihail Mikov",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-uglify": "^1.1.0"
+  }
+}

@@ -1,3 +1,3 @@
-images/*
-css/app.css
-js/app.min.js
+images/*:*
+css/app.css:*
+js/app.min.js:*

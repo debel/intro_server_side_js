@@ -1,2 +1,5 @@
 bower_components/*
 node_modules/*
+images/*
+css/app.css
+js/app.min.js

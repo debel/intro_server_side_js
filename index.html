@@ -37,38 +37,38 @@
         <img src="images/good.gif" style="padding-left:200px"/>   
     </div>
     
-    <div class="step history" data-x="1200" data-y="2400" data-rotate="180">
+    <div class="step history" data-x="1200" data-y="2700" data-rotate="180">
         <span class="year">1995</span><span class="title">the browser revolution</span>
         <h1>Brendan Eich creates javascript for netscape</h1>
     </div>    
     
-    <div class="step history" data-x="1150" data-y="1800" data-rotate="180">
+    <div class="step history" data-x="550" data-y="2550" data-rotate="180">
         <span class="year">1997</span><span class="title">the browser wars</span>
         <h1>Microsoft copy javascript in internet explorer</h1>
     </div>
     
-    <div class="step history" data-x="1300" data-y="1200" data-rotate="180">
+    <div class="step history" data-x="1300" data-y="2400" data-rotate="180">
         <span class="year">2002</span><span class="title">standardization</span>
         <h1>Crockford writes JSLint and the JSON standard</h1>
     </div>
     
-    <div class="step history" data-x="1500" data-y="600" data-rotate="180">
+    <div class="step history" data-x="600" data-y="2250" data-rotate="180">
         <span class="year">2005</span><span class="title">ajax revolution</span>
         <h1>Jessie James Garret invents ajax</h1>
     </div>
     
-    <div class="step history" data-x="1500" data-y="0" data-rotate="180">
+    <div class="step history" data-x="1250" data-y="2050" data-rotate="180">
         <span class="year">2006</span><span class="title">framework revolution</span>
         <h1>jQuery</h1>
         <h2>I enrolled at aubg</h2>
     </div>
     
-    <div class="step history" data-x="1320" data-y="-600" data-rotate="180">
+    <div class="step history" data-x="650" data-y="1950" data-rotate="180">
         <span class="year">2008</span><span class="title">JIT revolution</span>
         <h1>google v8 is faster!</h1>
     </div>
     
-    <div class="step history">
+    <div class="step history" data-x="1100" data-y="1750" data-rotate="180">
         <span class="year">2009</span><span class="title">server revolution</span>
         <h1>node.js</h1>
         <h2>I graduated aubg</h2>
@@ -132,15 +132,45 @@
     </div>
     
     <div id="komfo" class="step" data-x="0" data-y="0" data-z="-300" data-rotate="300" data-scale="1">
-        Komfo
-        <span class="joke">A beast of a codebase</span>
-        <span class="scope"><ul><li>1 MLC?</li> <li>XX servers</li></ul></span>
+        <h3>I work at <span style="font-size:1.3em">Komfo</span></h3>
+        <span class="scope">Our main product is a system for enterprise social media management<span>
+        <span class="joke">we have a huge codebase and a lot of legacy problems</span>
+        <span>
+            we employ a combination of technologies
+        </span>
+        <span>
+            all the old code is in PHP and apache
+            nginx for load balancing
+            node.js for real-time and front-end development tasks
+            celery (amqp) for asynchronous distributed tasks execution
+            and much more
+        </span>
+        <span>
+            nice diagram will come here
+        </span>
+    </div>
+    
+    <div id="node" class="step slide" data-x="-1500" data-y="-1500">
+        <h1>node.js - run javascript on the server</h1>
+        <pre><code class="javascript">        
+        //server.js
+        var http = require('http'),
+            server = http.createServer(function (req, res) {
+                res.end('Hello Web!');
+        });
         
+        server.listen(8080);
+        </code></pre>
+        &nbsp;
+        <pre><code class="bash">        
+        $ node server.js
+        </code></pre>
     </div>
     
     <div id="npm" class="step slide" data-x="-1000" data-y="-1500">
+        <h1>npm - nodejs <span style="color: gray; font-style:italic;">(server)</span> package manager</h1>
         <pre><code class="javascript">
-        npm init
+        $ npm init
         
         //package.json
         {
@@ -152,13 +182,14 @@
             },
         }
         
-        npm install
+        $ npm install
         </code></pre>
     </div>
     
     <div id="bower" class="step slide" data-x="-700" data-y="-1500">
+        <h1>bower - client-side javascript package manager</h1>
         <pre><code class="javascript">
-         bower init
+        $ bower init
         
         //bower.json
         {
@@ -168,12 +199,14 @@
             }
         }
         
-         bower install
+        $ bower install
         </code></pre>
     </div>
 
     <div id="gulp-lint" class="step slide" data-x="-400" data-y="-1500">
+        <h1>gulp - automate development tasks</h1>
         <pre><code class="javascript">
+        //gulpFile.js
         gulp.task('lint-js', function () {
             return gulp.src('my/*.js')
                 .pipe(jshint({enforceall: true}))
@@ -184,6 +217,7 @@
     
     <div id="gulp-build" class="step slide" data-x="-100" data-y="-1500">
         <pre><code>
+        //gulpFile.js
         gulp.task('build-js', function () {
             return gulp.src(['array/of/paths', 'to/all/*.js'])
                 .pipe(concat('app.min.js'))
@@ -192,6 +226,10 @@
         });
 
         gulp.task('default', ['lint-js', 'build-js']);
+        </code></pre>
+        &nbsp;
+        <pre><code class="bash">        
+        $ gulp
         </code></pre>
     </div>
 

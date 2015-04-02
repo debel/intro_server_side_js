@@ -29,6 +29,26 @@
         <span class="joke">(also juggling)</span></span>
     </div>
 
+    <div id="komfo" class="step" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="6">
+        <h3 style="color:gray">I work at <span style="font-size:1.3em;color:white">Komfo</span></h3>
+        <div style="font-size:0.8em;">Our main product is a system for enterprise social media management</div>
+        <div style="color:gray;font-size:0.6em; text-align: center">(nice diagram here)</div>
+    </div>
+    
+    <div id="komfo2" class="step" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="1">
+        <div style="text-align:center">
+            we employ a combination of technologies:
+        </div>
+        <ul style="font-size:0.65em">
+            <li><span style="color:gray">frontend:</span> jquery, angular</li>
+            <li><span style="color:gray">backend:</span> php, java, node.js</li>
+            <li><span style="color:gray">storage:</span> mysql, mongodb, redis, cdn</li>
+            <li><span style="color:gray">amqp</span> for asynchronous distributed tasks execution</li>
+            <li><span style="color:gray">socket.io</span> for real-time collaboration</li>
+            <li>git, jira and a bunch of <span style="color:red">supporting infrastructure</span></li>
+        </ul>
+    </div>
+    
     <div class="step history" data-x="1700" data-y="3000" data-rotate="180" data-scale="2">
         <h1 style="text-align:center">a short and mostly wrong history of javascript</h1>
     </div>
@@ -74,22 +94,22 @@
         <h2>I graduated aubg</h2>
     </div>
     
-    <div class="step history" data-x="50" data-y="200">
+    <div class="step history" data-x="1100" data-y="1550">
         <span class="year">2010</span><span class="title">standardization II</span>
         <h1>ECMAScript 5 "use strict"</h1>
     </div>
     
-    <div class="step history" data-x="-50" data-y="400">
+    <div class="step history" data-x="1200" data-y="1350">
         <span class="year">2012</span><span class="title">real-time revolution</span>
         <h1>socket.io</h1>
     </div>
     
-    <div class="step history" data-x="50" data-y="600">
+    <div class="step history" data-x="700" data-y="1150">
         <span class="year">2014</span><span class="title">front-end framework wars</span>
         <h1>angular, backbone, ember, react, etc, etc</h1>
     </div>
     
-    <div class="step history" data-x="0" data-y="800">
+    <div class="step history" data-x="1000" data-y="900">
         <span class="year">2015</span><span class="title">language evolution</span>
         <h1>ECMAScript 6 Harmony</h1>
         <h2 style="padding-left:150px;">()*=>{yield 'what now?';}</h2>
@@ -100,10 +120,25 @@
         <span class="joke">This didn't exist back-in-my-day.</span>
     </div>
     
+    <div id="wat" class="step" data-x="1000" data-y="650">
+        javascript still has bad parts
+        0.1 + 0.2 !== 0.3 WAT?!
+        
+    </div>
+
+    <div id="ie8" class="step">
+        the browser still does stuff badly
+        IE8 support (puke)
+    </div>
+
+    <div id="brogrammers" class="step">
+        many people still reject learning the language 
+            and do terrible things with it
+        <span style="font-size:0.6em;float:right; color: red">and even the best still make mistakes</span>
+    </div>
     <div id="agenda" class="step" data-x="-500" data-y="-500" data-rotate="90" data-scale="4">
         <div style="margin-left:60px;">
-            <span style="font-style:italic;">today</span>
-            let's focus on <span style="font-size: 1.1em;font-weight:bold">tools</span>
+            "there is a <span style="font-size: 1.1em;font-weight:bold">tool</span> for that"
         </div>
         <ul style="float:left; margin-left:100px; margin-top:20px; margin-right:100px;">
             <li>node.js</li>
@@ -131,35 +166,24 @@
         help us grow an "ecosystem" around the process of software engineering
     </div>
     
-    <div id="komfo" class="step" data-x="0" data-y="0" data-z="-300" data-rotate="300" data-scale="1">
-        <h3>I work at <span style="font-size:1.3em">Komfo</span></h3>
-        <span class="scope">Our main product is a system for enterprise social media management<span>
-        <span class="joke">we have a huge codebase and a lot of legacy problems</span>
-        <span>
-            we employ a combination of technologies
-        </span>
-        <span>
-            all the old code is in PHP and apache
-            nginx for load balancing
-            node.js for real-time and front-end development tasks
-            celery (amqp) for asynchronous distributed tasks execution
-            and much more
-        </span>
-        <span>
-            nice diagram will come here
-        </span>
+    <div id="helper" class="step" data-x="0">
+        Tools are your steampunk r2d2
+        <img src="images/r2d2.jpg" width="500px"/>
     </div>
     
     <div id="node" class="step slide" data-x="-1500" data-y="-1500">
         <h1>node.js - run javascript on the server</h1>
         <pre><code class="javascript">        
-        //server.js
+        /* server.js */
         var http = require('http'),
+            //the server executes this callback
+            //everytime someone connects to the server
             server = http.createServer(function (req, res) {
                 res.end('Hello Web!');
         });
         
-        server.listen(8080);
+        //start the server on port 8080
+        server.listen(8080); 
         </code></pre>
         &nbsp;
         <pre><code class="bash">        
@@ -172,7 +196,7 @@
         <pre><code class="javascript">
         $ npm init
         
-        //package.json
+        /* package.json */
         {
             "name": "my-apps-name",
             "description": "learning should be exciting",
@@ -206,30 +230,32 @@
     <div id="gulp-lint" class="step slide" data-x="-400" data-y="-1500">
         <h1>gulp - automate development tasks</h1>
         <pre><code class="javascript">
-        //gulpFile.js
-        gulp.task('lint-js', function () {
-            return gulp.src('my/*.js')
-                .pipe(jshint({enforceall: true}))
-                .pipe(jshint.reporter('default'));
+        /* gulpFile.js */
+        var gulp = require('gulp');
+        
+        gulp.task('lint-my-js', function () {
+            return gulp.src('my/*.js')  //take all js files
+                .pipe(jshint({enforceall: true})) //pass them to jshint for static analysis
+                .pipe(jshint.reporter('default')); //jshint reports the results
         });
         </code></pre>
     </div>
     
     <div id="gulp-build" class="step slide" data-x="-100" data-y="-1500">
         <pre><code>
-        //gulpFile.js
+        /* gulpFile.js */
         gulp.task('build-js', function () {
-            return gulp.src(['array/of/paths', 'to/all/*.js'])
-                .pipe(concat('app.min.js'))
-                .pipe(uglify())
-                .pipe(gulp.dest('client/js/build/'));
+            return gulp.src(['array/of/paths', 'to/all/*.js']) //get files from multiple locations
+                .pipe(concat('app.min.js')) //concatenate them into one file
+                .pipe(uglify()) //minify the concatenated file, remove whitespace, comments, etc
+                .pipe(gulp.dest('client/js/build/')); //save the result
         });
 
-        gulp.task('default', ['lint-js', 'build-js']);
+        gulp.task('default', ['lint-js', 'build-js']); //a task can be a series of other tasks 
         </code></pre>
         &nbsp;
-        <pre><code class="bash">        
-        $ gulp
+        <pre><code class="bash">
+        $ gulp 
         </code></pre>
     </div>
 

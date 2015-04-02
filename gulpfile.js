@@ -8,7 +8,7 @@ gulp.task('build', function () {
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('js/'));
         
-    gulp.src(['bower_components/highlightjs/styles/default.css','css/impress.css'])
+    gulp.src(['bower_components/highlightjs/styles/zenburn.css','css/impress.css'])
         .pipe(concat('app.css'))
         .pipe(gulp.dest('css/'));
 });

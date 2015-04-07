@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
-    <title>aubg_js</title>
+    <title>JavaScript @ Komfo</title>
 
     <meta name="author" content="Mihail Mikov" />
 
@@ -21,20 +21,32 @@
 </div>
 
 <div id="impress">
-    <div id="hello" class="step" data-x="0" data-y="0" data-rotate="0" data-scale="3">
-        
+    <div id="growth" class="step" data-x="0" data-y="0" data-rotate="180" data-scale="5">
+        <h1>INF 275 – Web Client Technologies<span style="color:red">?!</span></h1>
+        <span class="joke">This didn't exist back-in-my-day.</span>
+    </div>
+
+    <div id="hello" class="step" data-x="0" data-y="0" data-rotate="0" data-scale="3">    
         <h2>Hi, I'm Mihail <span style="font-size: 0.5em;color:gray">(m.mikoff@gmail.com)</span></h2>
         <h1>aubg class of 2009</h1>
-        <span class="slide-text">interests: life, the universe and all-things-tech <br/>
-        <span class="joke">(also juggling)</span></span>
+
     </div>
 
     <div id="komfo" class="step" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="6">
-        <h3 style="color:gray">I work at <span style="font-size:1.3em;color:white">Komfo</span></h3>
+        <div style="text-align:center;color:white">I work at <img src="images/komfo_logo.png" /></div>
         <div style="font-size:0.8em;">Our main product is a system for enterprise social media management</div>
-        <div style="color:gray;font-size:0.6em; text-align: center">(nice diagram here)</div>
     </div>
-    
+
+    <div class="step history" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="6">
+        <img src="images/Product_suite.png" />
+    </div>
+
+
+    <div class="step history" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="6">
+        <h1>our clients</h1>
+        <img src="images/clients.png" />
+    </div>
+
     <div id="komfo2" class="step" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="1">
         <div style="text-align:center">
             we employ a combination of technologies:
@@ -43,18 +55,18 @@
             <li><span style="color:gray">frontend:</span> jquery, angular</li>
             <li><span style="color:gray">backend:</span> php, java, node.js</li>
             <li><span style="color:gray">storage:</span> mysql, mongodb, redis, cdn</li>
-            <li><span style="color:gray">amqp</span> for asynchronous distributed tasks execution</li>
-            <li><span style="color:gray">socket.io</span> for real-time collaboration</li>
+            <li>amqp <span style="color:gray">for asynchronous distributed tasks execution</span></li>
+            <li>socket.io <span style="color:gray">for real-time collaboration</span></li>
             <li>git, jira and a bunch of <span style="color:red">supporting infrastructure</span></li>
         </ul>
     </div>
-    
+
     <div class="step history" data-x="1700" data-y="3000" data-rotate="180" data-scale="2">
-        <h1 style="text-align:center">a short and mostly wrong history of javascript</h1>
+        <div style="text-align:center">to talk about javascript <span style="font-style:italic">today</span> we have to know its <span style="font-weight:bold">history</span></div>
     </div>
     
     <div class="step history" data-x="1700" data-y="3000" data-rotate="180" data-scale="2">
-        <img src="images/good.gif" style="padding-left:200px"/>   
+        <img src="images/history.jpg" style="padding-left:100px"/>
     </div>
     
     <div class="step history" data-x="1200" data-y="2700" data-rotate="180">
@@ -99,12 +111,12 @@
         <h1>ECMAScript 5 "use strict"</h1>
     </div>
     
-    <div class="step history" data-x="1200" data-y="1350">
+    <div class="step history" data-x="1200" data-y="1400">
         <span class="year">2012</span><span class="title">real-time revolution</span>
         <h1>socket.io</h1>
     </div>
     
-    <div class="step history" data-x="700" data-y="1150">
+    <div class="step history" data-x="1000" data-y="1250">
         <span class="year">2014</span><span class="title">front-end framework wars</span>
         <h1>angular, backbone, ember, react, etc, etc</h1>
     </div>
@@ -115,38 +127,40 @@
         <h2 style="padding-left:150px;">()*=>{yield 'what now?';}</h2>
     </div>
 
-    <div id="growth" class="step" data-x="0" data-y="0" data-rotate="180" data-scale="5">
-        <h1>INF 275 – Web Client Technologies<span style="color:red">?!</span></h1>
-        <span class="joke">This didn't exist back-in-my-day.</span>
-    </div>
-    
-    <div id="wat" class="step" data-x="1000" data-y="650">
-        javascript still has bad parts
-        0.1 + 0.2 !== 0.3 WAT?!
-        
-    </div>
-
-    <div id="ie8" class="step">
-        the browser still does stuff badly
-        IE8 support (puke)
+    <div id="wat" class="step" data-x="100" data-y="650">
+        <div>javascript <span style="color:red">still</span> has bad parts</div>
+        <ul style="font-size:0.7em; padding-left:100px">
+            <li>globals</li>
+            <li>imprecise decimals</li>
+            <li>callback hell</li>
+            <li>etc</li>
+        </ul>
     </div>
 
-    <div id="brogrammers" class="step">
-        many people still reject learning the language 
+    <div id="ie8" class="step" data-x="0" data-y="900">
+        the browsers <span style="color:red">still</span> have bad parts
+        <div style="padding-left:100px; font-size:0.7em">IE8 support<span>?!</span></div>
+    </div>
+
+    <div id="brogrammers" class="step" data-x="-100" data-y="1100">
+        many people <span style="color:red">still</span> reject learning the language 
             and do terrible things with it
         <span style="font-size:0.6em;float:right; color: red">and even the best still make mistakes</span>
     </div>
+    
     <div id="agenda" class="step" data-x="-500" data-y="-500" data-rotate="90" data-scale="4">
         <div style="margin-left:60px;">
             "there is a <span style="font-size: 1.1em;font-weight:bold">tool</span> for that"
         </div>
         <ul style="float:left; margin-left:100px; margin-top:20px; margin-right:100px;">
             <li>node.js</li>
-            <li>npm</li>
-            <li>bower</li>
+            <li>express</li>
+            <li>mongoose</li>
             <li>socket.io</li>
         </ul>
         <ul style="float:left;margin-top:15px;">
+            <li>npm</li>
+            <li>bower</li>
             <li>gulp</li>
             <li>jshint</li>
             <li style="color:gray">git</li>
@@ -156,19 +170,21 @@
     <div id="why_tools" class="step" data-x="3700" data-y="1900" data-scale="6">
         <h2 style="color:red; font-size:1.1em;font-weight:bold">Tools</h2>
     </div>
+    
     <div id="why_tools-1" class="step" data-x="3700" data-y="1500" data-scale="6">
-        make your more productive
+        make us more productive
     </div>
+    
     <div id="why_tools-2" class="step" data-x="3700" data-y="1100" data-scale="6">
         take away a mental burden
     </div>
+    
     <div id="why_tools-3" class="step" data-x="3700" data-y="500" data-scale="6">
         help us grow an "ecosystem" around the process of software engineering
     </div>
     
     <div id="helper" class="step" data-x="0">
-        Tools are your steampunk r2d2
-        <img src="images/r2d2.jpg" width="500px"/>
+        (diagram of how tools cooperate)
     </div>
     
     <div id="node" class="step slide" data-x="-1500" data-y="-1500">
@@ -176,53 +192,57 @@
         <pre><code class="javascript">        
         /* server.js */
         var http = require('http'),
-            //the server executes this callback
-            //everytime someone connects to the server
             server = http.createServer(function (req, res) {
+                //server executes callback on every connection
                 res.end('Hello Web!');
         });
         
         //start the server on port 8080
-        server.listen(8080); 
+        server.listen(8080);
         </code></pre>
-        &nbsp;
-        <pre><code class="bash">        
-        $ node server.js
+        <h1>run the server from the console</h1>
+        <pre><code class="bash">
+        node server.js
         </code></pre>
     </div>
-    
+
     <div id="npm" class="step slide" data-x="-1000" data-y="-1500">
         <h1>npm - nodejs <span style="color: gray; font-style:italic;">(server)</span> package manager</h1>
         <pre><code class="javascript">
-        $ npm init
-        
         /* package.json */
         {
-            "name": "my-apps-name",
+            "name": "my-presentation",
             "description": "learning should be exciting",
             "devDependencies": {
-                "bower": "*",
-                "gulp": "~3.8.11"
-            },
+                "gulp": "^3.8.11",
+                "gulp-concat": "^2.5.2",
+                "gulp-uglify": "^1.1.0"
+            }
         }
-        
-        $ npm install
+        </code></pre>
+        <h1>using npm from the console</h1>
+        <pre><code>
+        $ npm init
+        $ npm install #installs dependencies from package.json
+        $ npm install -g bower #install bower globally
         </code></pre>
     </div>
     
     <div id="bower" class="step slide" data-x="-700" data-y="-1500">
         <h1>bower - client-side javascript package manager</h1>
         <pre><code class="javascript">
-        $ bower init
-        
-        //bower.json
+        /* bower.json */
         {
-            name: 'my-apps-name',
-            dependencies: {
-                jquery: 'latest',
+            "name": "my-presentation",
+            "dependencies": {
+                "highlightjs": "~8.4.0",
+                "impress.js": "~0.5.3"
             }
         }
-        
+        </code></pre>
+        <h1>run bower from the console</h1>
+        <pre><code>
+        $ bower init
         $ bower install
         </code></pre>
     </div>
@@ -234,9 +254,12 @@
         var gulp = require('gulp');
         
         gulp.task('lint-my-js', function () {
-            return gulp.src('my/*.js')  //take all js files
-                .pipe(jshint({enforceall: true})) //pass them to jshint for static analysis
-                .pipe(jshint.reporter('default')); //jshint reports the results
+            //read js files
+            return gulp.src('my/*.js')
+                //pass them to jshint for static analysis
+                .pipe(jshint({enforceall: true}))
+                //jshint reports the results
+                .pipe(jshint.reporter('default'));
         });
         </code></pre>
     </div>
@@ -245,17 +268,22 @@
         <pre><code>
         /* gulpFile.js */
         gulp.task('build-js', function () {
-            return gulp.src(['array/of/paths', 'to/all/*.js']) //get files from multiple locations
-                .pipe(concat('app.min.js')) //concatenate them into one file
-                .pipe(uglify()) //minify the concatenated file, remove whitespace, comments, etc
-                .pipe(gulp.dest('client/js/build/')); //save the result
+            //get files from multiple locations
+            return gulp.src(['array/of/paths', 'to/all/*.js'])
+                //concatenate them into one file
+                .pipe(concat('app.min.js'))
+                //minify the concatenated file, remove whitespace, comments, etc
+                .pipe(uglify())
+                //save the result
+                .pipe(gulp.dest('client/js/build/'));
         });
 
-        gulp.task('default', ['lint-js', 'build-js']); //a task can be a series of other tasks 
+        //a task can be a series of other tasks 
+        gulp.task('default', ['lint-js', 'build-js']);
         </code></pre>
-        &nbsp;
+        <h1>running gulp from the console</h1>
         <pre><code class="bash">
-        $ gulp 
+        $ gulp
         </code></pre>
     </div>
 
@@ -308,58 +336,12 @@
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
         13
     </div>
-
-    
-    <!--
-        
-        So to make a summary of all the possible attributes used to position presentation steps, we have:
-        
-        * `data-x`, `data-y`, `data-z` -- they define the position of **the center** of step element on
-            the canvas in pixels; their default value is 0;
-        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` -- they define the rotation of
-            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
-            are exactly the same;
-        * `data-scale` -- defines the scale of step element; default value is 1
-        
-        These values are used by impress.js in CSS transformation functions, so for more information consult
-        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
-        
-    -->
 </div>
 
 <script src="js/app.min.js"></script>
-<script>impress().init();</script>
-<script>hljs.initHighlightingOnLoad();</script>
 <script>
-document.addEventListener('click', function (e){
-    console.log(e);
-});
+    impress().init();
+    hljs.initHighlightingOnLoad();
 </script>
-
-<!--
-    
-    The `impress()` function also gives you access to the API that controls the presentation.
-    
-    Just store the result of the call:
-    
-        var api = impress();
-    
-    and you will get three functions you can call:
-    
-        `api.init()` - initializes the presentation,
-        `api.next()` - moves to next step of the presentation,
-        `api.prev()` - moves to previous step of the presentation,
-        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
-                id or the DOM element; second parameter can be used to define duration of the transition in ms,
-                but it's optional - if not provided default transition duration for the presentation will be used.
-    
-    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
-    Don't worry, it wont initialize the presentation again.
-    
-    For some example uses of this API check the last part of the source of impress.js where the API
-    is used in event handlers.
-    
--->
-
 </body>
 </html>

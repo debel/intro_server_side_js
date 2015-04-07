@@ -1,7 +1,7 @@
 {
   "name": "aubg_js",
   "version": "0.0.0",
-  "description": "An introduction to several mostly related server side javascript aspects tooling (npm, bower, gulp) and networking (express and socket.io)",
+  "description": "An introduction to several mostly related server side javascript aspects: tooling (npm, bower, gulp) and networking (express and socket.io)",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,3 +1,6 @@
-images/*:*
-css/app.css:*
-js/app.min.js:*
+images/clients.png:index.html
+images/history.jpg:index.html
+images/komfo_logo.png:index.html
+images/Product_suite.png:index.html
+css/app.css:index.html
+js/app.min.js:index.html

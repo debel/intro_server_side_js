@@ -5,8 +5,8 @@ images/Product_suite.png:index.html
 images/dev_env-javascript.png:index.html
 images/dev_env.png:index.html
 images/rise_of_the_planet_of_the_apes.jpg:index.html
-images/servers-javascript.png
-images/servers.png
-images/event-loop.jpg
+images/servers-javascript.png:index.html
+images/servers.png:index.html
+images/event-loop.jpg:index.html
 css/app.css:index.html
 js/app.min.js:index.html

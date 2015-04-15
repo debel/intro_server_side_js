@@ -29,25 +29,24 @@
     <div id="hello" class="step" data-x="0" data-y="0" data-rotate="0" data-scale="3">    
         <h2>Hi, I'm Mihail <span style="font-size: 0.5em;color:gray">(m.mikoff@gmail.com)</span></h2>
         <h1>aubg class of 2009</h1>
-
+        <h3>today's topic: non-browser javascript</h3>
     </div>
 
     <div id="komfo" class="step" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="6">
-        <div style="text-align:center;color:white">I work at <img src="images/komfo_logo.png" /></div>
+        <div style="text-align:center;color:white">I work at <img style="width:25%;margin-bottom:-4px;margin-left:7px" src="images/komfo_logo.png" /></div>
         <div style="font-size:0.8em;">Our main product is a system for enterprise social media management</div>
     </div>
 
     <div class="step history" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="6">
-        <img src="images/Product_suite.png" />
+        <img style="width:130%;margin-left:-150px" src="images/Product_suite.png" />
     </div>
-
 
     <div class="step history" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="6">
         <h1>our clients</h1>
         <img src="images/clients.png" />
     </div>
 
-    <div id="komfo2" class="step" data-x="-2500" data-y="-1100" data-z="-300" data-rotate="300" data-scale="1">
+    <div id="komfo2" class="step" data-x="-2700" data-y="-1950" data-z="-300" data-rotate="300" data-scale="1">
         <div style="text-align:center">
             we employ a combination of technologies:
         </div>
@@ -59,6 +58,22 @@
             <li>socket.io <span style="color:gray">for real-time collaboration</span></li>
             <li>git, jira and a bunch of <span style="color:red">supporting infrastructure</span></li>
         </ul>
+    </div>
+
+    <div class="step">
+        <img style="width:100%" src="images/servers.png" />
+    </div>
+
+    <div class="step">
+        <img style="width:100%" src="images/servers-javascript.png" />
+    </div>
+
+    <div class="step">
+        <img style="width:100%" src="images/dev_env.png" />
+    </div>
+
+    <div class="step">
+        <img style="width:100%" src="images/dev_env-javascript.png" />
     </div>
 
     <div class="step history" data-x="1700" data-y="3000" data-rotate="180" data-scale="2">
@@ -92,18 +107,16 @@
     <div class="step history" data-x="1250" data-y="2050" data-rotate="180">
         <span class="year">2006</span><span class="title">framework revolution</span>
         <h1>jQuery</h1>
-        <h2>I enrolled at aubg</h2>
     </div>
     
     <div class="step history" data-x="650" data-y="1950" data-rotate="180">
         <span class="year">2008</span><span class="title">JIT revolution</span>
-        <h1>google v8 is faster!</h1>
+        <h1>google chrome's v8 is fast!</h1>
     </div>
     
     <div class="step history" data-x="1100" data-y="1750" data-rotate="180">
         <span class="year">2009</span><span class="title">server revolution</span>
         <h1>node.js</h1>
-        <h2>I graduated aubg</h2>
     </div>
     
     <div class="step history" data-x="1100" data-y="1550">
@@ -138,7 +151,7 @@
     </div>
 
     <div id="ie8" class="step" data-x="0" data-y="900">
-        the browsers <span style="color:red">still</span> have bad parts
+        and the browsers <span style="color:red">still</span> have bad parts
         <div style="padding-left:100px; font-size:0.7em">IE8 support<span>?!</span></div>
     </div>
 
@@ -150,15 +163,15 @@
     
     <div id="agenda" class="step" data-x="-500" data-y="-500" data-rotate="90" data-scale="4">
         <div style="margin-left:60px;">
-            "there is a <span style="font-size: 1.1em;font-weight:bold">tool</span> for that"
+            "there are tools <span style="font-size: 1.1em;font-weight:bold">tool</span> for that"
         </div>
         <ul style="float:left; margin-left:100px; margin-top:20px; margin-right:100px;">
             <li>node.js</li>
             <li>express</li>
-            <li>mongoose</li>
+            <li>mongodb</li>
             <li>socket.io</li>
         </ul>
-        <ul style="float:left;margin-top:15px;">
+        <ul style="float:left;margin-top:15px;maring-left:15px;">
             <li>npm</li>
             <li>bower</li>
             <li>gulp</li>
@@ -182,12 +195,17 @@
     <div id="why_tools-3" class="step" data-x="3700" data-y="500" data-scale="6">
         help us grow an "ecosystem" around the process of software engineering
     </div>
-    
-    <div id="helper" class="step" data-x="0">
-        (diagram of how tools cooperate)
+
+    <div id="why_tools-3" class="step history" data-x="3700" data-y="500" data-scale="6">
+        <img src="images/rise_of_the_planet_of_the_apes.jpg" style="margin-left: 130px" width="60%"/>
     </div>
-    
-    <div id="node" class="step slide" data-x="-1500" data-y="-1500">
+
+    <div id="node0" class="step" data-x="0">
+        <h1>inside node.js</h1>
+        <img style="margin-left:-75px" src="images/event-loop.jpg" />
+    </div>
+
+    <div id="node2" class="step slide" data-x="-1500" data-y="-1500">
         <h1>node.js - run javascript on the server</h1>
         <pre><code class="javascript">        
         /* server.js */
@@ -202,29 +220,44 @@
         </code></pre>
         <h1>run the server from the console</h1>
         <pre><code class="bash">
-        node server.js
+        $ node server.js
         </code></pre>
     </div>
 
-    <div id="npm" class="step slide" data-x="-1000" data-y="-1500">
+    <div id="npm1" class="step slide" data-x="-1500" data-y="-1500">
         <h1>npm - nodejs <span style="color: gray; font-style:italic;">(server)</span> package manager</h1>
         <pre><code class="javascript">
-        /* package.json */
-        {
-            "name": "my-presentation",
-            "description": "learning should be exciting",
-            "devDependencies": {
-                "gulp": "^3.8.11",
-                "gulp-concat": "^2.5.2",
-                "gulp-uglify": "^1.1.0"
+            /* package.json */
+            {
+                "name": "my-presentation",
+
+                "description": "learning should be exciting",
+
+                "dependencies": {},
+
+                "devDependencies": {
+                    "gulp": "^3.8.11",
+                    "gulp-concat": "^2.5.2",
+                    "gulp-uglify": "^1.1.0"
+                }
             }
-        }
         </code></pre>
+    </div>
+
+    <div id="npm2" class="step slide" data-x="-1000" data-y="-1500">
         <h1>using npm from the console</h1>
-        <pre><code>
-        $ npm init
-        $ npm install #installs dependencies from package.json
-        $ npm install -g bower #install bower globally
+        <pre><code class="bash">
+            #interactivly create a package.json file
+            $ npm init
+
+            #install bower globally
+            $ npm install -g bower
+
+            #installs dependencies from package.json
+            $ npm install
+
+            #update installed packages
+            $ npm update
         </code></pre>
     </div>
     
@@ -252,43 +285,68 @@
         <pre><code class="javascript">
         /* gulpFile.js */
         var gulp = require('gulp');
-        
+
+        //define a task to check our code for errors
         gulp.task('lint-my-js', function () {
-            //read js files
+            /* read javascript files
+            pass to jshint for static analysis
+            jshint reports the results */
             return gulp.src('my/*.js')
-                //pass them to jshint for static analysis
                 .pipe(jshint({enforceall: true}))
-                //jshint reports the results
                 .pipe(jshint.reporter('default'));
         });
         </code></pre>
     </div>
     
     <div id="gulp-build" class="step slide" data-x="-100" data-y="-1500">
-        <pre><code>
+        <pre><code style="margin-top:-30px" class="javascript">
         /* gulpFile.js */
+        var concat = require('gulp-concat'),
+            uglify = require('gulp-uglify');
+
         gulp.task('build-js', function () {
-            //get files from multiple locations
+            /* get files from multiple locations
+            concatenate and minify them into one file
+            save the result to a specified location */
             return gulp.src(['array/of/paths', 'to/all/*.js'])
-                //concatenate them into one file
                 .pipe(concat('app.min.js'))
-                //minify the concatenated file, remove whitespace, comments, etc
                 .pipe(uglify())
-                //save the result
                 .pipe(gulp.dest('client/js/build/'));
         });
 
-        //a task can be a series of other tasks 
+        //a task can be a series of other tasks
         gulp.task('default', ['lint-js', 'build-js']);
-        </code></pre>
-        <h1>running gulp from the console</h1>
-        <pre><code class="bash">
-        $ gulp
         </code></pre>
     </div>
 
-    <div class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <div>&#10084; gulp</div>
+
+    <div id="gulp-run" class="step slide" data-x="-100" data-y="-1500">
+        <pre><code class="javascript">
+            /* gulpFile.js */
+            gulp.task('watch', function () {
+                /* execute the default task every time
+                one of these files changes */
+                gulp.watch(['paths/to/project/files'], ['default']);
+            });
+        </code></pre>
+            <h1>running gulp from the console</h1>
+        <pre><code class="bash">
+            #execute the default task
+            $ gulp
+
+            #execute a task by name
+            $ gulp watch
+        </code></pre>
+    </div>
+
+    <div class="step" data-x="2500" data-y="-500" data-rotate="90" data-scale="4">
+        <div style="color:red;font-weight: bold;">gulp</div>
+        <ul>
+            <li><span style="color:gray">&#10084;</span> Check the code for errors</li>
+            <li><span style="color:gray">&#10084;</span> Concatenate files</li>
+            <li><span style="color:gray">&#10084;</span> Remove debugging, logging and comments</li>
+            <li><span style="color:gray">&#10084;</span> Reformat the code to the agreed project style</li>
+        </ul>
     </div>
     
     <div id="realtimejs-1" class="step slide" data-x="500" data-y="-1500">
@@ -300,12 +358,22 @@
     </div>
     
     <div id="git" class="step slide" data-x="1100" data-y="-1500">
-        <pre><code language="bash">
+        <h1>git - source control management</h1>
+        <pre><code class="bash">
         #get the code for this presentation
-        git clone "this presentation"
+        $ git clone "this presentation"
         
         #start managing your own source
-        git init
+        $ git init
+
+        #shows new and modified files
+        $ git status
+
+        #shows the changes introduced by a commit
+        $ git show
+
+        #shows the project's history
+        $ git log
         </code></pre>
     </div>
 
@@ -313,7 +381,7 @@
     <div id="git-2" class="step slide" data-x="1400" data-y="-1500">
         <pre><code>
         git add
-        git commit
+        git commit -m "
         git log
         </code></pre>
     </div>

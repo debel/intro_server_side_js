@@ -67,7 +67,7 @@
     <div class="step">
         <img style="width:100%" src="images/dev_env.png" />
     </div>
-    
+
     <div class="step history" data-x="1700" data-y="3000" data-rotate="180" data-scale="2">
         <div style="text-align:center">to talk about javascript <span style="font-style:italic">today</span> we have to know its <span style="font-weight:bold">history</span></div>
     </div>
@@ -192,12 +192,12 @@
         <img src="images/rise_of_the_planet_of_the_apes.jpg" style="margin-left: 130px" width="60%"/>
     </div>
 
-    <div id="node0" class="step" data-x="0">
+    <div id="node" class="step" data-x="0">
         <h1>inside node.js</h1>
         <img style="margin-left:-75px" src="images/event-loop.jpg" />
     </div>
 
-    <div id="node2" class="step slide" data-x="-1500" data-y="-1500">
+    <div id="node1" class="step slide" data-x="-1500" data-y="-1500">
         <h1>node.js - run javascript on the server</h1>
         <pre><code class="javascript">        
         /* server.js */
@@ -216,7 +216,7 @@
         </code></pre>
     </div>
 
-    <div id="npm1" class="step slide" data-x="-1500" data-y="-1500">
+    <div id="npm" class="step slide" data-x="-1500" data-y="-1500">
         <h1>npm - nodejs <span style="color: gray; font-style:italic;">(server)</span> package manager</h1>
         <pre><code class="javascript">
             /* package.json */
@@ -236,7 +236,7 @@
         </code></pre>
     </div>
 
-    <div id="npm2" class="step slide" data-x="-1000" data-y="-1500">
+    <div id="npm1" class="step slide" data-x="-1000" data-y="-1500">
         <h1>using npm from the console</h1>
         <pre><code class="bash">
             #interactivly create a package.json file
@@ -341,7 +341,11 @@
     </div>
 
     <div id="realtimejs" class="step" data-x="500" data-y="-1500">
-        <h1>socket-io: real-time networking</h1>
+        <h1 style="margin-left: 50px">socket-io: real-time networking</h1>
+        <video id="socket_video" loop width="110%" style="margin-left:-50px">
+            <source src="images/socketio.mp4" />
+            no video?!
+        </video>
 
     </div>
 
@@ -497,6 +501,7 @@
 <script>
     impress().init();
     hljs.initHighlightingOnLoad();
+    document.getElementById("socket_video").play();
 </script>
 </body>
 </html>

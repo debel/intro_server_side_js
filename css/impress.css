@@ -307,3 +307,13 @@ body {
 .future {
     display: none;
 }
+
+#mongoDB-sql h1 {
+    font-size: 1.1em;
+}
+
+#mongoDB-sql table * {
+    font-size: 0.9em;
+    margin: 0;
+    padding:0;
+}

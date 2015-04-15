@@ -280,6 +280,16 @@
         </code></pre>
     </div>
 
+    <div id="love-gulp" class="step" data-x="2500" data-y="-500" data-rotate="90" data-scale="4">
+        <div style="color:red;font-weight: bold;">gulp</div>
+        <ul>
+            <li><span style="color:gray">&#10084;</span> Check the code for errors</li>
+            <li><span style="color:gray">&#10084;</span> Concatenate files</li>
+            <li><span style="color:gray">&#10084;</span> Remove debugging, logging and comments</li>
+            <li><span style="color:gray">&#10084;</span> Reformat the code to the agreed project style</li>
+        </ul>
+    </div>
+
     <div id="gulp-lint" class="step slide" data-x="-400" data-y="-1500">
         <h1>gulp - automate development tasks</h1>
         <pre><code class="javascript">
@@ -319,7 +329,6 @@
         </code></pre>
     </div>
 
-
     <div id="gulp-run" class="step slide" data-x="-100" data-y="-1500">
         <pre><code class="javascript">
             /* gulpFile.js */
@@ -339,16 +348,11 @@
         </code></pre>
     </div>
 
-    <div class="step" data-x="2500" data-y="-500" data-rotate="90" data-scale="4">
-        <div style="color:red;font-weight: bold;">gulp</div>
-        <ul>
-            <li><span style="color:gray">&#10084;</span> Check the code for errors</li>
-            <li><span style="color:gray">&#10084;</span> Concatenate files</li>
-            <li><span style="color:gray">&#10084;</span> Remove debugging, logging and comments</li>
-            <li><span style="color:gray">&#10084;</span> Reformat the code to the agreed project style</li>
-        </ul>
+    <div id="realtimejs" class="step" data-x="500" data-y="-1500">
+        <h1>socket-io: real-time networking</h1>
+
     </div>
-    
+
     <div id="realtimejs-1" class="step slide" data-x="500" data-y="-1500">
         <h1>socket-io: real-time networking</h1>
         var ws = new WebSocket("ws://localhost:7788");
@@ -357,7 +361,70 @@
     <div id="realtimejs-2" class="step slide" data-x="800" data-y="-1500">
         <h1>socket-io: real time networking (client)</h1>
     </div>
-    
+
+    <div id="mongoDB" class="step" data-x="800" data-y="-1500">
+        <h1>MongoDB: database for JSON documents</h1>
+        <ul style="font-size: 0.75em">
+            <li>&bull; the basic unit of storage is the JSON object</li>
+            <li>&bull; uses javascript as the query language</li>
+            <li>&bull; highly cohesive with node.js</li>
+            <li>&bull; like every technology it has its limitations</li>
+        </ul>
+    </div>
+
+    <div id="mongoDB-sql" class="step" data-x="800" data-y="-1500">
+        <h1>Database Concepts</h1>
+        <table>
+            <thead><td>SQL</td><td></td><td>MongoDB</td></thead>
+            <tr><td>database</td><td>&nbsp;=&nbsp;</td><td>database</td></tr>
+            <tr><td>table</td><td>&nbsp;=&nbsp;</td><td>collection</td></tr>
+            <tr><td>row</td><td>&nbsp;=&nbsp;</td><td>binary JSON document</td></tr>
+            <tr><td>column</td><td>&nbsp;=&nbsp;</td><td>field</td></tr>
+            <tr><td>index</td><td>&nbsp;=&nbsp;</td><td>index</td></tr>
+            <tr><td>table joins</td><td>&nbsp;=&nbsp;</td><td>embedded documents and linking</td></tr>
+        </table>
+    </div>
+
+    <div id="mongoDB-insert" class="step slide" data-x="800" data-y="-1500">
+        <h1>mongodb: database for JSON documents</h1>
+        <pre><code class="javascript">
+            //inserting a document into the books collection
+            //with an embedded author document
+            //and an array of related works ids
+            db.books.insert({
+                "isdn": "2414993-2204",
+                "title": "To ask a foolish question",
+                "author": {
+                        "name":"Robert Sheckley",
+                        "occupation": "Sci-fi author"
+                },
+                "first_published_on": ISODate("1953-03-11"),
+                "related_works_ids": ["77a2bc3", "32d3298"]
+            });
+        </code></pre>
+    </div>
+
+    <div id="mongoDB-find" class="step slide" data-x="800" data-y="-1500">
+        <h1>mongodb: database for JSON documents</h1>
+        <pre><code style="padding:0;margin:0;overflow: hidden" class="javascript">
+            //querying the database
+            //for the book with the given isdn
+            db.books.find({ isdn: "2414993-2204" });
+
+            //for books with a specified genre
+            db.books.find({ genre: { $exists: 1 });
+
+            //for books published after the given date
+            db.books.find({
+                first_published_on: {$gt: ISODate("1987-03-11")}
+            });
+
+            //for books with an author name
+            //matching the the regular expression
+            db.books.find({ "author.name": /Sheckley/ });
+        </code></pre>
+    </div>
+
     <div id="git" class="step slide" data-x="1100" data-y="-1500">
         <h1>git - source control management</h1>
         <pre><code class="bash">
@@ -378,7 +445,6 @@
         </code></pre>
     </div>
 
-    
     <div id="git-2" class="step slide" data-x="1400" data-y="-1500">
         <pre><code>
         git add

@@ -425,11 +425,23 @@
         </code></pre>
     </div>
 
+    <div id="git-overview" class="step" data-x="1100" data-y="-1500">
+        <h1>git - source control management</h1>
+        <ul style="margin-right:-50px;float:right">
+            <li>created by Linus Torvalds</li>
+            <li>distributed</li>
+            <li>efficient</li>
+            <li>simple data structures</li>
+            <li>complex behaviour</li>
+        </ul>
+        <img style="margin-left:-150px; margin-top:20px" src="images/git.jpg" width="50%" />
+    </div>
+
     <div id="git" class="step slide" data-x="1100" data-y="-1500">
         <h1>git - source control management</h1>
         <pre><code class="bash">
         #get the code for this presentation
-        $ git clone "this presentation"
+        $ git clone "presentation repository url"
         
         #start managing your own source
         $ git init
@@ -438,10 +450,10 @@
         $ git status
 
         #shows the changes introduced by a commit
-        $ git show
+        $ git show HEAD
 
         #shows the project's history
-        $ git log
+        $ git log --oneline --graph
         </code></pre>
     </div>
 

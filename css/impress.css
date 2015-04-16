@@ -1,10 +1,6 @@
 a {
     font-family: 'PT Sans', sans-serif;
-    text-decoration: none;
     color:inherit;
-}
-
-a:hover {
     text-decoration: underline;
 }
 
@@ -176,6 +172,12 @@ table {
     position: relative;
     opacity: 1;
     margin: 20px auto;
+}
+
+
+.impress-disabled img,
+.impress-not-supported img {
+    opacity: 1 !important;
 }
 
 .impress-not-supported .fallback-message {
